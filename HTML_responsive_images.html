@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Responsive images</title>
+    </head>
+    <body>
+        <h1>Respponsive images</h1>
+        <!--Srcset a sizes (max width) jedná se o velikost displeje na kterém koukám a první hodnota 480px je pokud je podmínka splněna, druhé pokud není splněna-->
+        <img    srcset="images/favorite-1.jpg 640w,
+                     images/favorite-2.jpg 800w"
+                sizes="(max-width: 600px), 480px, 800px"
+                src="images/favorite-1.jpg"
+                alt="Some fockin birds">
+        <img    style="width: 640px;"
+                srcset="images/favorite-1.jpg,
+                        images/favorite-2.jpg"
+                src="images/favorite-1.jpg"
+                alt="Here should be fockin bird">
+        <picture>
+            <source media="(max-width: 1200px)" srcset="images/favorite-1.jpg">
+            <source media="(min-width: 1200px)" srcset="images/favorite-2.jpg">
+            <img src="images/favorite-1.jpg" alt="fockin birds">
+        </picture>
+        <!--Picture element is similar to video, audio - muze použít více zdrojů-->
+        <picture>
+            <source media="(max-width: 1200px)" srcset="images/ireland-cropped.jpg">
+            <source media="(min width: 1200px)" srcset="images/ireland.jpg">
+            <img src="images/ireland.jpg" alt="nelze načíst obrázek dude">     
+        </picture>
+        <!--ukázkový výběr dle velikosti width zdroje-->
+        <footer>MDN Documentation <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images">here</a></footer>
+    </body>
+</html>

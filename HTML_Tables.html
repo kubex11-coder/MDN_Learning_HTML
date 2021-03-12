@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Table intro</title>
+        <link href="styles/HTML_Tables.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Table intro</h1>
+            <table>
+                <tr>
+                    <!--th - Table headr pro použití headeru tabulky-->
+                    <th></th>
+                    <th>Knocky</th>
+                    <th>Flor</th>
+                    <th>Ella</th>
+                    <th>Juan</th>
+                  </tr>
+                  <tr>
+                    <td>Breed</td>
+                    <td>Jack Russell</td>
+                    <td>Poodle</td>
+                    <td>Streetdog</td>
+                    <td>Cocker Spaniel</td>
+                  </tr>
+                  <tr>
+                    <td>Age</td>
+                    <td>16</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>Owner</td>
+                    <td>Mother-in-law</td>
+                    <td>Me</td>
+                    <td>Me</td>
+                    <td>Sister-in-law</td>
+                  </tr>
+                  <tr>
+                    <td>Eating Habits</td>
+                    <td>Eats everyone's leftovers</td>
+                    <td>Nibbles at food</td>
+                    <td>Hearty eater</td>
+                    <td>Will eat till he explodes</td>
+                  </tr>
+            </table>
+            <table>
+     <!--použití atributu colspan a rowspan-->
+                <tr>
+                  <th colspan="2">Animals</th>
+                </tr>
+                <tr>
+                  <th colspan="2">Hippopotamus</th>
+                </tr>
+                <tr>
+                  <th>Horse</th>
+                  <td rowspan="2">Mare</td>
+                </tr>
+                <tr>
+                  <td>Stallion</td>
+                </tr>
+                <tr>
+                  <th colspan="2">Crocodile</th>
+                </tr>
+                <tr>
+                  <th>Chicken</th>
+                  <td rowspan="2">Hen</td>
+                </tr>
+                <tr>
+                  <td>Rooster</td>
+                </tr>
+              </table>
+              <table>
+    <!--použití CSS za použití elementu colgroup a col s atributem style (nefunguje kvůli použitému CSS které definuje elementy th a td jinak)-->
+                <colgroup>
+                    <col>
+                  <col style="background-color: yellow">
+                </colgroup>
+                <tr>
+                  <th>Data 1</th>
+                  <th>Data 2</th>
+                </tr>
+                <tr>
+                  <td>Calcutta</td>
+                  <td>Orange</td>
+                </tr>
+                <tr>
+                  <td>Robots</td>
+                  <td>Jazz</td>
+                </tr>
+              </table>
+              <footer>
+                  <p>
+                    Link to MDN documentation <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics">here</a>
+                  </p>
+              </footer>
+    </body>
+</html>

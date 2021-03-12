@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Video and Audio</title>
+    </head>
+    <body>
+        <video src="video_audio/rabbit320.mp4" controls>
+            <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.webm">link to the video</a> instead.</p> 
+          </video>
+          <!--Basic video implementation-->
+          <video controls>
+            <source src="video_audio/rabbit320.mp4" type="video/mp4">
+            <source src="video_audio/rabbit320.webm" type="video/webm">
+            <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.mp4">link to the video</a> instead.</p>
+          </video>
+          <!--přidán typ videa - dva typy pro prohlížeče které by podporovali jiný typ-->
+          <video controls width="400" height="400"
+         loop muted preload="auto" 
+         poster="images/poster.png">
+         <source src="video_audio/rabbit320.mp4" type="video/mp4">
+         <source src="video_audio/rabbit320.webm" type="video/webm">
+         <p>Your browser doesn't support HTML video. Here is a <a href="rabbit320.mp4">link to the video</a> instead.</p>
+        </video>
+        <!--přidán dylší atributy - loop, muted, preload-->
+        <audio controls>
+        <source src="video_audio/viper.mp3" type="audio/mp3">
+        <source src="video_audio/viper.ogg" type="audio/ogg">
+        <p>Your browser doesn't support HTML5 audio. Here is a <a href="viper.mp3">link to the audio</a> instead.</p>
+        </audio>
+          <footer>
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content">MDN Documentation</a>
+          </footer>
+    </body>
+</html>
